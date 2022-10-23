@@ -1,6 +1,4 @@
-.layout {
 
-}
 .bg-main {
   display: flex;
   height: 100vh;
@@ -26,9 +24,10 @@
 .btn {
   padding: .7rem 1rem;
 
-  cursor: pointer;
-  font-weight: 500;
   font-size: 1.1rem;
+  font-weight: 500;
+
+  cursor: pointer;
   transition: all ease-in-out .3s;
 
   color: white;
@@ -42,11 +41,13 @@
 }
 .btn-game-layout {
   display: flex;
+
   row-gap: 2em;
 }
 .btn-game {
-  cursor: pointer;
   font-size: 2rem;
+
+  cursor: pointer;
   transition: all ease-in-out .3s;
 
   border: 0;
@@ -98,9 +99,10 @@
 }
 
 .scoreboard__text-total {
-  border-top: 1px solid;
   padding-top: .1rem;
   margin-top: .4rem;
+
+  border-top: 1px solid;
 }
 
 .scoreboard__text-fwRegular {
@@ -148,15 +150,15 @@
 /* --------- From Tablet --------- */
 
 @media screen and (min-width: 768px) {
-
   .layout {
-    display: flex;
-    background-color: #212121;
-    justify-content: center;
-   }
-   
-   .bg-main {
-    min-width: 600px;
-   }
-   
+      display: flex;
+
+      background-color: #212121;
+
+      justify-content: center;
+  }
+
+  .bg-main {
+      min-width: 600px;
+  }
 }
