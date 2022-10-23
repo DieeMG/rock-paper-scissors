@@ -119,31 +119,31 @@ const Board = () => {
     };
 
     return(
+        <main className="layout">
         <section className="bg-main">
             <h1>Piedra, papel o tijera</h1>
 
             <span className="spacer-1"></span>
 
-            <div className="puntuacion">
-                <span className="puntuacion__titulo">Puntuación:</span>
-                <span className="puntuacion__texto">Usuario: <span className="puntuacion__texto-fwRegular">{contadorUser}</span></span>
-                <span className="puntuacion__texto">Maquina: <span className="puntuacion__texto-fwRegular">{contadorMachine}</span></span>
-                <span className="puntuacion__texto">Empates: <span className="puntuacion__texto-fwRegular">{contadorTie}</span></span>
-                <span className="puntuacion__texto puntuacion__texto-total">Partidas: <span className="puntuacion__texto-fwRegular">{contadorGames}</span></span>
-                
+            <div className="scoreboard">
+                <span className="scoreboard__title">Puntuación:</span>
+                <span className="scoreboard__text">Usuario: <span className="scoreboard__text-fwRegular">{contadorUser}</span></span>
+                <span className="scoreboard__text">Maquina: <span className="scoreboard__text-fwRegular">{contadorMachine}</span></span>
+                <span className="scoreboard__text">Empates: <span className="scoreboard__text-fwRegular">{contadorTie}</span></span>
+                <span className="scoreboard__text scoreboard__text-total">Partidas: <span className="scoreboard__text-fwRegular">{contadorGames}</span></span>
             </div>
 
             <h3>Tablero</h3>
         
-            <div className="tablero">
+            <div className="board">
                 <div>
-                    <span className="tablero__titulo" >Maquina </span> 
-                    <span className="tablero__eleccion" >{resultMachine}</span>
+                    <span className="board__title" >Maquina </span> 
+                    <span className="board__chose" >{resultMachine}</span>
                 </div>
-                <span className="tablero__titulo" >vs</span>
+                <span className="board__title" >vs</span>
                 <div>
-                    <span className="tablero__titulo" >Usuario </span> 
-                    <span className="tablero__eleccion" >{resultUser}</span>
+                    <span className="board__title" >Usuario </span> 
+                    <span className="board__chose" >{resultUser}</span>
                 </div>
             </div>
             
@@ -165,9 +165,11 @@ const Board = () => {
                 <button className="btn" onClick={cleanBoard}>Limpiar Tablero</button>
                 <button className="btn" onClick={finishGame}>Reiniciar Juego</button>
             </div>
-            <span className="spacer-1"></span>
+            <span className="spacer-2"></span>
 
         </section>
+        </main>
+
     )
 
 };

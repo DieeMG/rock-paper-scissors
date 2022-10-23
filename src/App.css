@@ -1,6 +1,9 @@
+.layout {
+
+}
 .bg-main {
   display: flex;
-  min-height: 100vh;
+  height: 100vh;
   flex-direction: column;
 
   font-size: calc(10px + 2vmin);
@@ -21,9 +24,11 @@
 }
 
 .btn {
-  padding: .4rem 1rem;
+  padding: .7rem 1rem;
 
   cursor: pointer;
+  font-weight: 500;
+  font-size: 1.1rem;
   transition: all ease-in-out .3s;
 
   color: white;
@@ -35,9 +40,13 @@
 .btn:hover {
   background-color: #0277bd;
 }
-
+.btn-game-layout {
+  display: flex;
+  row-gap: 2em;
+}
 .btn-game {
   cursor: pointer;
+  font-size: 2rem;
   transition: all ease-in-out .3s;
 
   border: 0;
@@ -66,10 +75,42 @@
 }
 
 
-.tablero {
+.scoreboard {
+  display: flex;
+  width: 50%;
+  padding: 1rem;
+  flex-direction: column;
+
+  border-radius: 10px;
+  background-color: #263238;
+}
+
+.scoreboard__title {
+  font-size: 1.2rem;
+  font-weight: 700;
+
+  text-transform: uppercase;
+}
+
+.scoreboard__text {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.scoreboard__text-total {
+  border-top: 1px solid;
+  padding-top: .1rem;
+  margin-top: .4rem;
+}
+
+.scoreboard__text-fwRegular {
+  font-weight: normal;
+}
+
+.board {
   display: flex;
   width: 75%;
-  padding: .5rem .7rem;
+  padding: .8rem 1rem;
   flex-direction: column;
 
   text-align: center;
@@ -78,45 +119,13 @@
   background-color: #0288d1;
 }
 
-.tablero__titulo {
-  font-size: .9rem;
+.board__title {
+  font-size: 1.2rem;
   font-weight: 500;
 }
 
-.tablero__eleccion {
-  font-size: 1rem;
-  font-weight: normal;
-}
-
-.puntuacion {
-  display: flex;
-  width: 50%;
-  padding: .5rem .7rem;
-  flex-direction: column;
-
-  border-radius: 10px;
-  background-color: #263238;
-}
-
-.puntuacion__titulo {
-  font-size: .75rem;
-  font-weight: 500;
-
-  text-transform: uppercase;
-}
-
-.puntuacion__texto {
-  font-size: .7rem;
-  font-weight: 500;
-}
-
-.puntuacion__texto-total {
-  border-top: 1px solid;
-  padding-top: .1rem;
-  margin-top: .4rem;
-}
-
-.puntuacion__texto-fwRegular {
+.board__chose {
+  font-size: 1.5rem;
   font-weight: normal;
 }
 
@@ -130,4 +139,24 @@
 
 .Perdiste {
   color: #f44336;
+}
+
+/* =============================== */
+/*          Media Queries          */
+/* =============================== */
+
+/* --------- From Tablet --------- */
+
+@media screen and (min-width: 768px) {
+
+  .layout {
+    display: flex;
+    background-color: #212121;
+    justify-content: center;
+   }
+   
+   .bg-main {
+    min-width: 600px;
+   }
+   
 }
