@@ -7,7 +7,7 @@ Proyecto de aplicación de piedra, papel o tijera creado con [React](https://git
 
 2) cd rock-paper-scissors
 
-3) npm i
+3) npm install
 
 4) npm start
 
