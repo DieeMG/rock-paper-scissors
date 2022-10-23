@@ -1,38 +1,133 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.bg-main {
   display: flex;
+  min-height: 100vh;
   flex-direction: column;
+
+  font-size: calc(10px + 2vmin);
+
+  color: white;
+  background-color: #212121;
+
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.btn-layout {
+  display: flex;
+  width: 75%;
+  flex-direction: column;
+
+  gap: .5rem;
+}
+
+.btn {
+  padding: .4rem 1rem;
+
+  cursor: pointer;
+  transition: all ease-in-out .3s;
+
   color: white;
+  border: 0;
+  border-radius: 5px;
+  background: #01579b;
 }
 
-.App-link {
-  color: #61dafb;
+.btn:hover {
+  background-color: #0277bd;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btn-game {
+  cursor: pointer;
+  transition: all ease-in-out .3s;
+
+  border: 0;
+  background: none;
+}
+
+.btn-game:hover {
+  scale: 1.25;
+}
+
+.mx-4 {
+  margin-right: 4px;
+  margin-left: 4px;
+}
+
+.spacer-1 {
+  height: 1em;
+}
+
+.spacer-2 {
+  height: 2em;
+}
+
+.spacer-3 {
+  height: 3em;
+}
+
+
+.tablero {
+  display: flex;
+  width: 75%;
+  padding: .5rem .7rem;
+  flex-direction: column;
+
+  text-align: center;
+
+  border-radius: 10px;
+  background-color: #0288d1;
+}
+
+.tablero__titulo {
+  font-size: .9rem;
+  font-weight: 500;
+}
+
+.tablero__eleccion {
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+.puntuacion {
+  display: flex;
+  width: 50%;
+  padding: .5rem .7rem;
+  flex-direction: column;
+
+  border-radius: 10px;
+  background-color: #263238;
+}
+
+.puntuacion__titulo {
+  font-size: .75rem;
+  font-weight: 500;
+
+  text-transform: uppercase;
+}
+
+.puntuacion__texto {
+  font-size: .7rem;
+  font-weight: 500;
+}
+
+.puntuacion__texto-total {
+  border-top: 1px solid;
+  padding-top: .1rem;
+  margin-top: .4rem;
+}
+
+.puntuacion__texto-fwRegular {
+  font-weight: normal;
+}
+
+.Ganaste, .Empate, .Perdiste {
+  font-weight: 600;
+}
+
+.Ganaste {
+  color: #66bb6a;
+}
+
+.Perdiste {
+  color: #f44336;
 }
