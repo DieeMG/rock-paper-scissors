@@ -11,4 +11,4 @@ Proyecto de aplicación de piedra, papel o tijera creado con React utilizando Vi
 
 4) npm run dev
 
-o entrar [aquí](https://devacid.xyz/ppt).
+o entrar [aquí](https://dieemg.github.io/rock-paper-scissors/).
